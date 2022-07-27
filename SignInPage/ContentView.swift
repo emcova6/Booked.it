@@ -32,7 +32,7 @@ struct ContentView: View {
                     .frame(width: 150)
                     .padding()
                 
-                NavigationLink(destination: Text("logged in").navigationBarBackButtonHidden(true), isActive: $signIn){}
+                NavigationLink(destination: MainPage().navigationBarBackButtonHidden(true), isActive: $signIn){}
                 
                 Button(action: {
                     signIn = true

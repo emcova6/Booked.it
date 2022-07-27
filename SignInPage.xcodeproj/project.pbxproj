@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		10357B4B289096A8001FDF03 /* RegistrationPage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 10357B4A289096A8001FDF03 /* RegistrationPage.swift */; };
+		10357B4D2890D034001FDF03 /* MainPage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 10357B4C2890D034001FDF03 /* MainPage.swift */; };
 		106681A5288F4090007B51BE /* SignInPageApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 106681A4288F4090007B51BE /* SignInPageApp.swift */; };
 		106681A7288F4090007B51BE /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 106681A6288F4090007B51BE /* ContentView.swift */; };
 		106681A9288F4093007B51BE /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 106681A8288F4093007B51BE /* Assets.xcassets */; };
@@ -16,6 +17,7 @@
 
 /* Begin PBXFileReference section */
 		10357B4A289096A8001FDF03 /* RegistrationPage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegistrationPage.swift; sourceTree = "<group>"; };
+		10357B4C2890D034001FDF03 /* MainPage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainPage.swift; sourceTree = "<group>"; };
 		106681A1288F4090007B51BE /* SignInPage.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SignInPage.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		106681A4288F4090007B51BE /* SignInPageApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignInPageApp.swift; sourceTree = "<group>"; };
 		106681A6288F4090007B51BE /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -56,6 +58,7 @@
 				106681A4288F4090007B51BE /* SignInPageApp.swift */,
 				106681A6288F4090007B51BE /* ContentView.swift */,
 				10357B4A289096A8001FDF03 /* RegistrationPage.swift */,
+				10357B4C2890D034001FDF03 /* MainPage.swift */,
 				106681A8288F4093007B51BE /* Assets.xcassets */,
 				106681AA288F4093007B51BE /* Preview Content */,
 			);
@@ -143,6 +146,7 @@
 				106681A7288F4090007B51BE /* ContentView.swift in Sources */,
 				10357B4B289096A8001FDF03 /* RegistrationPage.swift in Sources */,
 				106681A5288F4090007B51BE /* SignInPageApp.swift in Sources */,
+				10357B4D2890D034001FDF03 /* MainPage.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

@@ -20,17 +20,17 @@ struct RegistrationPage: View {
                     .font(.title)
                     .padding()
                 
-                TextField ("Email", text: $email)
-                    .textFieldStyle(.roundedBorder)
-                    .frame(width: 150)
-                    .padding()
-                
                 TextField ("First name", text: $firstName)
                     .textFieldStyle(.roundedBorder)
                     .frame(width: 150)
                     .padding()
                 
                 TextField ("Last name", text: $lastName)
+                    .textFieldStyle(.roundedBorder)
+                    .frame(width: 150)
+                    .padding()
+                
+                TextField ("Email", text: $email)
                     .textFieldStyle(.roundedBorder)
                     .frame(width: 150)
                     .padding()

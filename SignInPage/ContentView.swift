@@ -8,7 +8,7 @@
 import SwiftUI
 
 struct ContentView: View {
-    @State var username: String = ""
+    @State var email: String = ""
     @State var password: String = ""
     @State var signIn: Bool = false
     @State var createAccount: Bool = false
@@ -22,7 +22,7 @@ struct ContentView: View {
                     .font(.title)
                     .padding()
                 
-                TextField ("Username", text: $username)
+                TextField ("Email", text: $email)
                     .textFieldStyle(.roundedBorder)
                     .frame(width: 150)
                     .padding()

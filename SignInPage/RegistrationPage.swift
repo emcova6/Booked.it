@@ -40,7 +40,7 @@ struct RegistrationPage: View {
                     .frame(width: 150)
                     .padding()
                 
-                NavigationLink(destination: Text("this is the main page").navigationBarBackButtonHidden(true), isActive: $makeAccount){}
+                NavigationLink(destination: Text("this is the main page (this will be an actual page of course)").navigationBarBackButtonHidden(true), isActive: $makeAccount){}
                 
                 Button(action: {
                     makeAccount = true

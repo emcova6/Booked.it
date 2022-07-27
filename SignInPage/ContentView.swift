@@ -15,7 +15,7 @@ struct ContentView: View {
     var body: some View {
         NavigationView {
             VStack {
-                Text("Welcome!")
+                Text("Welcome to BookedIt!")
                     .font(.title)
                 
                 Image(systemName: "calendar.circle.fill")
@@ -39,17 +39,19 @@ struct ContentView: View {
                     //this button takes user to main page
                 }, label: {
                     Text("Sign In")
-                        .padding()
+                        .padding(30)
                 })
                 
                 NavigationLink(destination: RegistrationPage().navigationBarBackButtonHidden(true), isActive: $createAccount){}
+                
+                Text("Don't have an account?")
+                    .padding()
                 
                 Button(action: {
                     createAccount = true
                     //this button takes user to registration page
                 }, label: {
                     Text("Create Account")
-                        .padding()
                 })
             }
         }

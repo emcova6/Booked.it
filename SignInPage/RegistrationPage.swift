@@ -16,8 +16,10 @@ struct RegistrationPage: View {
     var body: some View {
         NavigationView {
             VStack{
-                Text("Create an account.")
+                Text("Create an account")
                     .font(.title)
+                
+                Text("It'll only take a minute!")
                     .padding()
                 
                 TextField ("First name", text: $firstName)
@@ -47,7 +49,7 @@ struct RegistrationPage: View {
                     //this button takes user to main page
                 }, label: {
                     Text("Register account")
-                        .padding()
+                        .padding(30)
                 })
             }
         }

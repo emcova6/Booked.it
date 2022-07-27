@@ -11,6 +11,7 @@ struct ContentView: View {
     @State var username: String = ""
     @State var password: String = ""
     @State var signIn: Bool = false
+    @State var createAccount: Bool = false
     var body: some View {
         NavigationView {
             VStack {
@@ -31,12 +32,24 @@ struct ContentView: View {
                     .frame(width: 150)
                     .padding()
                 
-                NavigationLink(destination: Text("Logged in"), isActive: $signIn){ EmptyView() }
+                NavigationLink(destination: Text("logged in").navigationBarBackButtonHidden(true), isActive: $signIn){}
                 
                 Button(action: {
                     signIn = true
+                    //this button takes user to main page
                 }, label: {
                     Text("Sign In")
+                        .padding()
+                })
+                
+                NavigationLink(destination: RegistrationPage().navigationBarBackButtonHidden(true), isActive: $createAccount){}
+                
+                Button(action: {
+                    createAccount = true
+                    //this button takes user to registration page
+                }, label: {
+                    Text("Create Account")
+                        .padding()
                 })
             }
         }

@@ -8,7 +8,8 @@
 import SwiftUI
 
 struct RegistrationPage: View {
-    @State var username: String = ""
+    @State var firstName: String = ""
+    @State var lastName: String = ""
     @State var password: String = ""
     @State var email: String = ""
     @State var makeAccount: Bool = false
@@ -24,7 +25,12 @@ struct RegistrationPage: View {
                     .frame(width: 150)
                     .padding()
                 
-                TextField ("Username", text: $username)
+                TextField ("First name", text: $firstName)
+                    .textFieldStyle(.roundedBorder)
+                    .frame(width: 150)
+                    .padding()
+                
+                TextField ("Last name", text: $lastName)
                     .textFieldStyle(.roundedBorder)
                     .frame(width: 150)
                     .padding()

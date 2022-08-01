@@ -18,7 +18,7 @@ struct MainPage: View {
                 Text("It only takes a few minutes.")
                     .padding()
                 
-                NavigationLink(destination: Text("this is where you'd make the appointment").navigationBarBackButtonHidden(true), isActive: $makeAppoint){}
+                NavigationLink(destination: BusinessListingPage().navigationBarBackButtonHidden(true), isActive: $makeAppoint){}
                 
                 Button(action: {
                     makeAppoint = true

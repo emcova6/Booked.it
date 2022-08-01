@@ -50,9 +50,9 @@ struct ListBusiness: Identifiable {
 }
 
 var businessListings = [
-ListBusiness(name: "camel", description: "moo", image: "camel"),
-ListBusiness(name: "church", description: "holy", image: "church"),
-ListBusiness(name: "motorcycleguy", description: "weeeeeeeeeee", image: "motorcycleguy"),
-ListBusiness(name: "food", description: "delicious", image: "food"),
-ListBusiness(name: "goat", description: "AAAAAAAAAAAAAAAAAAAAAAAAAAA", image: "goat"),
+ListBusiness(name: "Betty's Beauty Salon & Hair Design", description: "", image: "Betty's Beauty Salon"),
+ListBusiness(name: "Lady's Nail Bar", description: "", image: "Lady's Nail Bar"),
+ListBusiness(name: "You & Me Nails Salon", description: "", image: "You and Me Nails Salon"),
+ListBusiness(name: "i do nail shop", description: "", image: "i do nails shop"),
+ListBusiness(name: "Gente Bella Beauty Salon Inc.", description: "", image: "GBBS"),
 ]

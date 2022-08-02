@@ -25,11 +25,10 @@ struct BusinessInfoPage: View {
             Spacer()
                 .frame(height: 10)
             
-            NavigationLink(destination: Text("this is where you'd make your appointment for the business you selected").navigationBarBackButtonHidden(true), isActive: $bookAppoint){}
+            NavigationLink(destination: BookingPage().navigationBarBackButtonHidden(true), isActive: $bookAppoint){}
             
             Button(action: {
                 bookAppoint = true
-                //this button takes user to booking page
             }, label: {
                 Text("Book Appointment")
                     .padding(30)

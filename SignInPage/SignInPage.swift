@@ -15,14 +15,14 @@ struct ContentView: View {
     var body: some View {
         NavigationView {
             VStack {
-                Text("Welcome to BookedIt!")
+                Text("Welcome to Booked.It!")
                     .font(.title)
                 
                 Image(systemName: "calendar.circle.fill")
                     .font(.title)
                     .padding()
                 
-                TextField ("Email", text: $email)
+                SecureField ("Email", text: $email)
                     .textFieldStyle(.roundedBorder)
                     .frame(width: 150)
                     .padding()
@@ -36,7 +36,6 @@ struct ContentView: View {
                 
                 Button(action: {
                     signIn = true
-                    //this button takes user to main page
                 }, label: {
                     Text("Sign In")
                         .padding(30)

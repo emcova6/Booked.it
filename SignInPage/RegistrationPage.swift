@@ -22,17 +22,17 @@ struct RegistrationPage: View {
                 Text("It'll only take a minute!")
                     .padding()
                 
-                TextField ("First name", text: $firstName)
+                SecureField ("First name", text: $firstName)
                     .textFieldStyle(.roundedBorder)
                     .frame(width: 150)
                     .padding()
                 
-                TextField ("Last name", text: $lastName)
+                SecureField ("Last name", text: $lastName)
                     .textFieldStyle(.roundedBorder)
                     .frame(width: 150)
                     .padding()
                 
-                TextField ("Email", text: $email)
+                SecureField ("Email", text: $email)
                     .textFieldStyle(.roundedBorder)
                     .frame(width: 150)
                     .padding()

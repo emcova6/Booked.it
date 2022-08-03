@@ -22,6 +22,7 @@ struct BusinessListingPage: View {
                                 .font(.system(size: 20, weight: .bold))
                         Text("\(businessListing.description)")
                                 .font(.system(size: 12))
+                                .padding(0.2)
 
                         }
                     }
@@ -52,7 +53,7 @@ struct ListBusiness: Identifiable {
 }
 
 var businessListings = [
-ListBusiness(name: "Gente Bella Beauty Salon Inc.", description: "Welcome to Gente Bella Beauty Salon Inc., your premier beauty and hair salon where we genuinely care about our clients. We use great products and have good prices for our services. Our customers deserve nothing but the best to always look glamorous. We provide a very welcoming environment for both new and returning customers. Having a friendly environment is what makes coming to our hair salon even more special.", image: "GBBS"),
+ListBusiness(name: "Gente Bella Beauty Salon Inc.", description: "Welcome to Gente Bella Beauty Salon Inc., your premier beauty and hair salon where we genuinely care about our clients. We use great products and have good prices for our services. Our customers deserve nothing but the best to always look glamorous. We provide a very welcoming environment for both new and returning customers.", image: "GBBS"),
 ListBusiness(name: "Betty's Beauty Salon & Hair Design", description: "Bettys Beauty salón Creemos que el servicio al cliente es lo más importante para realizar nuestra pasión por le trasformación de un cambio para felicidad.", image: "Betty's Beauty Salon"),
 ListBusiness(name: "Lady’s Nail Bar", description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco.", image: "Lady's Nail Bar"),
 ListBusiness(name: "You & Me Nails Salon", description: "Consectetur adipiscing elit ut aliquam. Imperdiet massa tincidunt nunc pulvinar sapien et ligula. Neque vitae tempus quam pellentesque nec. Varius duis at consectetur lorem donec.", image: "You and Me Nails Salon"),

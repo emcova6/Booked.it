@@ -9,7 +9,8 @@
 /* Begin PBXBuildFile section */
 		10357B4B289096A8001FDF03 /* RegistrationPage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 10357B4A289096A8001FDF03 /* RegistrationPage.swift */; };
 		10357B4D2890D034001FDF03 /* MainPage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 10357B4C2890D034001FDF03 /* MainPage.swift */; };
-		104364A82898A53F00D32BB9 /* BookingPage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 104364A72898A53F00D32BB9 /* BookingPage.swift */; };
+		104364A82898A53F00D32BB9 /* SchedulingPage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 104364A72898A53F00D32BB9 /* SchedulingPage.swift */; };
+		104364AE2899CD6300D32BB9 /* SchedulingPage2.swift in Sources */ = {isa = PBXBuildFile; fileRef = 104364AD2899CD6300D32BB9 /* SchedulingPage2.swift */; };
 		105F054B2891D8FF00052B65 /* Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 105F054A2891D8FF00052B65 /* Extension.swift */; };
 		106681A5288F4090007B51BE /* SignInPageApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 106681A4288F4090007B51BE /* SignInPageApp.swift */; };
 		106681A7288F4090007B51BE /* SignInPage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 106681A6288F4090007B51BE /* SignInPage.swift */; };
@@ -22,7 +23,8 @@
 /* Begin PBXFileReference section */
 		10357B4A289096A8001FDF03 /* RegistrationPage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegistrationPage.swift; sourceTree = "<group>"; };
 		10357B4C2890D034001FDF03 /* MainPage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainPage.swift; sourceTree = "<group>"; };
-		104364A72898A53F00D32BB9 /* BookingPage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BookingPage.swift; sourceTree = "<group>"; };
+		104364A72898A53F00D32BB9 /* SchedulingPage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SchedulingPage.swift; sourceTree = "<group>"; };
+		104364AD2899CD6300D32BB9 /* SchedulingPage2.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SchedulingPage2.swift; sourceTree = "<group>"; };
 		105F054A2891D8FF00052B65 /* Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Extension.swift; sourceTree = "<group>"; };
 		106681A1288F4090007B51BE /* SignInPage.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SignInPage.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		106681A4288F4090007B51BE /* SignInPageApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignInPageApp.swift; sourceTree = "<group>"; };
@@ -70,7 +72,8 @@
 				10357B4C2890D034001FDF03 /* MainPage.swift */,
 				108581BD28986F0700394C95 /* BusinessListingPage.swift */,
 				108581BF28986FFF00394C95 /* BusinessInfoPage.swift */,
-				104364A72898A53F00D32BB9 /* BookingPage.swift */,
+				104364A72898A53F00D32BB9 /* SchedulingPage.swift */,
+				104364AD2899CD6300D32BB9 /* SchedulingPage2.swift */,
 				106681A8288F4093007B51BE /* Assets.xcassets */,
 				106681AA288F4093007B51BE /* Preview Content */,
 			);
@@ -157,8 +160,9 @@
 			files = (
 				108581C028986FFF00394C95 /* BusinessInfoPage.swift in Sources */,
 				105F054B2891D8FF00052B65 /* Extension.swift in Sources */,
-				104364A82898A53F00D32BB9 /* BookingPage.swift in Sources */,
+				104364A82898A53F00D32BB9 /* SchedulingPage.swift in Sources */,
 				106681A7288F4090007B51BE /* SignInPage.swift in Sources */,
+				104364AE2899CD6300D32BB9 /* SchedulingPage2.swift in Sources */,
 				10357B4B289096A8001FDF03 /* RegistrationPage.swift in Sources */,
 				106681A5288F4090007B51BE /* SignInPageApp.swift in Sources */,
 				10357B4D2890D034001FDF03 /* MainPage.swift in Sources */,

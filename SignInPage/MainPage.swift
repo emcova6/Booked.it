@@ -28,6 +28,8 @@ struct MainPage: View {
                         .padding(30)
                 })
             }
+            .navigationTitle("")
+            .navigationBarHidden(true)
         }
     }
 }

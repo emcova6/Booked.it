@@ -20,12 +20,13 @@ struct BusinessInfoPage: View {
             Text(businessListing.name)
                 .font(.title)
                 .bold()
+                .padding()
             
             Text(businessListing.description)
             Spacer()
                 .frame(height: 10)
             
-            NavigationLink(destination: BookingPage().navigationBarBackButtonHidden(true), isActive: $bookAppoint){}
+            NavigationLink(destination: SchedulingPage().navigationBarBackButtonHidden(true), isActive: $bookAppoint){}
             
             Button(action: {
                 bookAppoint = true

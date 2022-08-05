@@ -20,7 +20,7 @@ struct SchedulingPage2: View {
     var body: some View {
         VStack {
             
-            Text("\(date)")
+            Text("You booked your appointment for the following date & time: \(date)")
                 .padding()
                 .frame(width: 350)
             

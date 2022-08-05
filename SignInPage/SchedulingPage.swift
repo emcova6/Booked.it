@@ -12,12 +12,14 @@ struct SchedulingPage: View {
     @State var next: Bool = false
     var body: some View {
         VStack{
-            Text("Select a date")
+            Text("Select a date & time")
                 .font(.title)
                 .bold()
             
-            DatePicker("Start date", selection: $date, displayedComponents: [.date])
-                .datePickerStyle(.graphical)
+            DatePicker("Date", selection: $date, displayedComponents: [.date])
+                .datePickerStyle(.graphical) //want to only show date, not time
+            
+            DatePicker("Time", selection: $date, displayedComponents: [.hourAndMinute])
             
             Text("\(date)")
                 .multilineTextAlignment(.center)

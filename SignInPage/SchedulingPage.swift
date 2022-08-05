@@ -17,13 +17,17 @@ struct SchedulingPage: View {
                 .bold()
             
             DatePicker("Date", selection: $date, displayedComponents: [.date])
-                .datePickerStyle(.graphical) //want to only show date, not time
+                .datePickerStyle(.graphical)
             
-            DatePicker("Time", selection: $date, displayedComponents: [.hourAndMinute])
+            //want to only show date, not time
+            
+            DatePicker("", selection: $date, displayedComponents: [.hourAndMinute])
+                .labelsHidden()
             
             Text("\(date)")
                 .multilineTextAlignment(.center)
                 .frame(width: 350)
+                .padding()
             
             Button(action: {
                 next = true

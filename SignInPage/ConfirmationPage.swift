@@ -11,10 +11,8 @@ struct ConfirmationPage: View {
     var date: Date
     var body: some View {
             VStack {
-                Text("ʏᴏᴜʀ ᴀᴘᴘᴏɪɴᴛᴍᴇɴᴛ ʜᴀꜱ ʙᴇᴇɴ ʙᴏᴏᴋᴇᴅ ꜰᴏʀ")
+                Text("ʏᴏᴜʀ ᴀᴘᴘᴏɪɴᴛᴍᴇɴᴛ ʜᴀꜱ ʙᴇᴇɴ ʙᴏᴏᴋᴇᴅ ꜰᴏʀ: \(date)")
                     .padding(30)
-                Text("\(date)")
-                    .padding()
                 Text("ᴛʜᴀɴᴋ ʏᴏᴜ ꜰᴏʀ ᴜꜱɪɴɢ ʙᴏᴏᴋᴇᴅ.ɪᴛ")
                     .padding(30)
 

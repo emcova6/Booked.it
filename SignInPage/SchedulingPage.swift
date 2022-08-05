@@ -23,14 +23,13 @@ struct SchedulingPage: View {
                 .multilineTextAlignment(.center)
                 .frame(width: 350)
             
-            NavigationLink(destination: SchedulingPage2().navigationBarBackButtonHidden(false), isActive: $next){}
-            
             Button(action: {
                 next = true
             }, label: {
                 Text("Next")
                     .padding(40)
             })
+            NavigationLink(destination: SchedulingPage2(date: date).navigationBarBackButtonHidden(false), isActive: $next){}
         }
         .edgesIgnoringSafeArea(.top)
     }

@@ -53,6 +53,8 @@ struct ContentView: View {
                     Text("Create Account")
                 })
             }
+            .navigationTitle("")
+            .navigationBarHidden(true)
         }
     }
 }

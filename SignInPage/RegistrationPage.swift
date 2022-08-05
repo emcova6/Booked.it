@@ -14,7 +14,7 @@ struct RegistrationPage: View {
     @State var email: String = ""
     @State var makeAccount: Bool = false
     var body: some View {
-        NavigationView {
+        //NavigationView {
             VStack{
                 Text("Create an account")
                     .font(.title)
@@ -52,7 +52,9 @@ struct RegistrationPage: View {
                         .padding(30)
                 })
             }
-        }
+            .navigationTitle("")
+            .navigationBarHidden(true)
+       // }
     }
 }
 

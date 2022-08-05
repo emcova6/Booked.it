@@ -26,7 +26,7 @@ struct BusinessInfoPage: View {
             Spacer()
                 .frame(height: 10)
             
-            NavigationLink(destination: SchedulingPage().navigationBarBackButtonHidden(true), isActive: $bookAppoint){}
+            NavigationLink(destination: SchedulingPage().navigationBarBackButtonHidden(false), isActive: $bookAppoint){}
             
             Button(action: {
                 bookAppoint = true

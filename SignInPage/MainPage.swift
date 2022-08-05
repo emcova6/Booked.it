@@ -10,7 +10,7 @@ import SwiftUI
 struct MainPage: View {
     @State var makeAppoint: Bool = false
     var body: some View {
-        NavigationView {
+        //NavigationView {
             VStack{
                 Text("Book an Appointment Now!")
                     .font(.title)
@@ -30,7 +30,7 @@ struct MainPage: View {
             }
             .navigationTitle("")
             .navigationBarHidden(true)
-        }
+       // }
     }
 }
 

@@ -9,7 +9,7 @@ import SwiftUI
 
 struct BusinessListingPage: View {
     var body: some View {
-        NavigationView {
+        //NavigationView {
             VStack {
                 List(businessListings) { businessListing in
                     HStack {
@@ -34,7 +34,7 @@ struct BusinessListingPage: View {
                         .font(.system(size: 26, weight: .bold)).opacity(0))
                     }
                 }
-            }
+           // }
         }
     }
         

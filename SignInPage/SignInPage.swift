@@ -15,7 +15,7 @@ struct ContentView: View {
     var body: some View {
         NavigationView {
             VStack {
-                Text("Welcome to Booked.It!")
+                Text("Welcome to Booked.it")
                     .font(.title)
                 
                 Image(systemName: "calendar.circle.fill")

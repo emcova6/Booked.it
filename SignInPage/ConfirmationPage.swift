@@ -8,13 +8,23 @@
 import SwiftUI
 
 struct ConfirmationPage: View {
+    @State var mainPage: Bool = false
     var date: Date
     var body: some View {
             VStack {
-                Text("ʏᴏᴜʀ ᴀᴘᴘᴏɪɴᴛᴍᴇɴᴛ ʜᴀꜱ ʙᴇᴇɴ ʙᴏᴏᴋᴇᴅ ꜰᴏʀ: \(date)")
+                Text("ʏᴏᴜʀ ᴀᴘᴘᴏɪɴᴛᴍᴇɴᴛ ʜᴀꜱ ʙᴇᴇɴ ʙᴏᴏᴋᴇᴅ ꜰᴏʀ: \(date.formatted(date: .complete, time: .shortened))")
                     .padding(30)
                 Text("ᴛʜᴀɴᴋ ʏᴏᴜ ꜰᴏʀ ᴜꜱɪɴɢ ʙᴏᴏᴋᴇᴅ.ɪᴛ")
                     .padding(30)
+                
+                NavigationLink(destination: MainPage().navigationBarBackButtonHidden(true), isActive: $mainPage){}
+                
+                Button(action: {
+                    mainPage = true
+                }, label: {
+                    Text("Back to Main Page")
+                        .padding(30)
+                })
 
         }
     }

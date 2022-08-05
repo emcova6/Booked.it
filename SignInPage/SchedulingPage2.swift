@@ -19,10 +19,9 @@ struct SchedulingPage2: View {
     var date: Date
     var body: some View {
         VStack {
-            
-            Text("You booked your appointment for the following date & time: \(date)")
+            Text("You booked your appointment for the following date & time: \(date.formatted(date: .complete, time: .shortened))")
                 .padding()
-                .frame(width: 350)
+                .frame(width: 340)
             
             Text("Contact Information")
                 .font(.title)
@@ -44,7 +43,7 @@ struct SchedulingPage2: View {
                 .frame(width: 150)
                 .padding()
             
-            VStack(spacing: 30) {
+           // VStack {
                 Text("Have you had any contact with someone with Covid-19 within the past 14 days?")
                     .padding()
                 HStack {
@@ -85,7 +84,7 @@ struct SchedulingPage2: View {
                     }
                 }
                 NavigationLink(destination: ConfirmationPage(date: date).navigationBarBackButtonHidden(true), isActive: $submit){}
-            }
+            //}
     }
 }
 

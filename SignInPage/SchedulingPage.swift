@@ -24,7 +24,7 @@ struct SchedulingPage: View {
             DatePicker("", selection: $date, displayedComponents: [.hourAndMinute])
                 .labelsHidden()
             
-            Text("\(date)")
+            Text("\(date.formatted(date: .complete, time: .shortened))")
                 .multilineTextAlignment(.center)
                 .frame(width: 350)
                 .padding()

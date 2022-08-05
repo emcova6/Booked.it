@@ -28,7 +28,7 @@
 		104364A72898A53F00D32BB9 /* SchedulingPage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SchedulingPage.swift; sourceTree = "<group>"; };
 		104364AD2899CD6300D32BB9 /* SchedulingPage2.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SchedulingPage2.swift; sourceTree = "<group>"; };
 		105F054A2891D8FF00052B65 /* Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Extension.swift; sourceTree = "<group>"; };
-		106681A1288F4090007B51BE /* SignInPage.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SignInPage.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		106681A1288F4090007B51BE /* Booked.it.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Booked.it.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		106681A4288F4090007B51BE /* SignInPageApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignInPageApp.swift; sourceTree = "<group>"; };
 		106681A6288F4090007B51BE /* SignInPage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignInPage.swift; sourceTree = "<group>"; };
 		106681A8288F4093007B51BE /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -62,7 +62,7 @@
 		106681A2288F4090007B51BE /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				106681A1288F4090007B51BE /* SignInPage.app */,
+				106681A1288F4090007B51BE /* Booked.it.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -97,9 +97,9 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		106681A0288F4090007B51BE /* SignInPage */ = {
+		106681A0288F4090007B51BE /* Booked.it */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 106681AF288F4093007B51BE /* Build configuration list for PBXNativeTarget "SignInPage" */;
+			buildConfigurationList = 106681AF288F4093007B51BE /* Build configuration list for PBXNativeTarget "Booked.it" */;
 			buildPhases = (
 				1066819D288F4090007B51BE /* Sources */,
 				1066819E288F4090007B51BE /* Frameworks */,
@@ -109,9 +109,9 @@
 			);
 			dependencies = (
 			);
-			name = SignInPage;
+			name = Booked.it;
 			productName = SignInPage;
-			productReference = 106681A1288F4090007B51BE /* SignInPage.app */;
+			productReference = 106681A1288F4090007B51BE /* Booked.it.app */;
 			productType = "com.apple.product-type.application";
 		};
 /* End PBXNativeTarget section */
@@ -129,7 +129,7 @@
 					};
 				};
 			};
-			buildConfigurationList = 1066819C288F4090007B51BE /* Build configuration list for PBXProject "SignInPage" */;
+			buildConfigurationList = 1066819C288F4090007B51BE /* Build configuration list for PBXProject "Booked.it" */;
 			compatibilityVersion = "Xcode 13.0";
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
@@ -142,7 +142,7 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				106681A0288F4090007B51BE /* SignInPage */,
+				106681A0288F4090007B51BE /* Booked.it */,
 			);
 		};
 /* End PBXProject section */
@@ -354,7 +354,7 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		1066819C288F4090007B51BE /* Build configuration list for PBXProject "SignInPage" */ = {
+		1066819C288F4090007B51BE /* Build configuration list for PBXProject "Booked.it" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				106681AD288F4093007B51BE /* Debug */,
@@ -363,7 +363,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		106681AF288F4093007B51BE /* Build configuration list for PBXNativeTarget "SignInPage" */ = {
+		106681AF288F4093007B51BE /* Build configuration list for PBXNativeTarget "Booked.it" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				106681B0288F4093007B51BE /* Debug */,

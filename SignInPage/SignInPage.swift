@@ -23,10 +23,6 @@ struct ContentView: View {
                 Text("Welcome to Booked.it")
                     .font(.custom("Audrey-Medium", size: 32))
                 
-                //Image(systemName: "calendar.circle.fill")
-                //    .font(.title)
-                //    .padding()
-                
                 TextField ("Email", text: $email)
                     .textFieldStyle(.roundedBorder)
                     .font(.custom("Audrey-Normal", size: 18))

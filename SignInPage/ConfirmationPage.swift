@@ -11,31 +11,34 @@ struct ConfirmationPage: View {
     @State var mainPage: Bool = false
     var date: Date
     var body: some View {
+        LinearGradient(gradient: Gradient(colors: [Color.turquoise, Color.belizeHole]), startPoint: .top, endPoint: .bottom)
+                    .edgesIgnoringSafeArea(.vertical)
+                    .overlay(
             VStack {
-                Text("Confirmation")
-                    .font(.custom("Audrey-Normal", size: 32))
-                    .padding()
-                
-                Text("Your appointment has been booked for \(date.formatted(date: .complete, time: .shortened))")
-                    .font(.custom("Audrey-Normal", size: 22))
-                    .padding(30)
-                
-                Text("Thank you for booking your appointment with us!")
-                    .multilineTextAlignment(.center)
-                    .font(.custom("Audrey-Normal", size: 22))
-                    .padding(20)
-                
-                NavigationLink(destination: MainPage().navigationBarBackButtonHidden(true), isActive: $mainPage){}
-                
-                Button(action: {
-                    mainPage = true
-                }, label: {
-                    Text("Back to Main Page")
-                        .font(.custom("Audrey-Normal", size: 20))
+                    Text("Confirmation")
+                        .font(.custom("Audrey-Medium", size: 32))
                         .padding(20)
-                })
-
-        }
+                    
+                    Text("Your appointment has been booked for \(date.formatted(date: .complete, time: .shortened))")
+                        .font(.custom("Audrey-Normal", size: 22))
+                        .frame(width: 340)
+                        .padding(20)
+                    
+                    Text("Thank you for booking your appointment with us!")
+                        .multilineTextAlignment(.center)
+                        .font(.custom("Audrey-Normal", size: 22))
+                        .padding(20)
+                    
+                    NavigationLink(destination: MainPage().navigationBarBackButtonHidden(true), isActive: $mainPage){}
+                    
+                    Button(action: {
+                        mainPage = true
+                    }, label: {
+                        Text("Back to Main Page")
+                            .font(.custom("Audrey-Medium", size: 20))
+                            .padding(25)
+                    })
+            })
     }
 }
 

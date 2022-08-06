@@ -9,32 +9,35 @@ import SwiftUI
 
 struct BusinessListingPage: View {
     var body: some View {
+        ZStack {
+            backgroundGradient
             VStack {
-                List(businessListings) { businessListing in
-                    HStack {
-                        Image(businessListing.image)
-                            .resizable()
-                            .frame(width: 75, height: 100)
-                            .clipShape(RoundedRectangle(cornerRadius: 10))
-                        VStack(alignment: .leading) {
-                            Text("\(businessListing.name)")
-                                .font(.system(size: 20, weight: .bold))
-                        Text("\(businessListing.description)")
-                                .font(.system(size: 12))
-                                .padding(0.2)
+                        List(businessListings) { businessListing in
+                            HStack {
+                                Image(businessListing.image)
+                                    .resizable()
+                                    .frame(width: 75, height: 100)
+                                    .clipShape(RoundedRectangle(cornerRadius: 10))
+                                VStack(alignment: .leading) {
+                                    Text("\(businessListing.name)")
+                                        .font(.system(size: 20, weight: .bold))
+                                Text("\(businessListing.description)")
+                                        .font(.system(size: 12))
+                                        .padding(0.2)
 
-                        }
-                    }
-                    .frame(height: 125)
-                    .listRowSeparator(.hidden)
-                    
-                    .navigationBarTitle("Listings")
-                    .overlay(NavigationLink("", destination: BusinessInfoPage(businessListing: businessListing))
-                        .font(.system(size: 26, weight: .bold)).opacity(0))
-                    }
-                }
+                                }
+                            }
+                            .frame(height: 125)
+                            .listRowSeparator(.hidden)
+                            
+                            .navigationBarTitle("Listings")
+                            .overlay(NavigationLink("", destination: BusinessInfoPage(businessListing: businessListing))
+                                .font(.system(size: 26, weight: .bold)).opacity(0))
+                            }
+            }
         }
     }
+}
         
 
 struct BusinessListingPage_Previews: PreviewProvider {
@@ -57,3 +60,7 @@ ListBusiness(name: "Lady’s Nail Bar", description: "Lorem ipsum dolor sit amet
 ListBusiness(name: "You & Me Nails Salon", description: "Consectetur adipiscing elit ut aliquam. Imperdiet massa tincidunt nunc pulvinar sapien et ligula. Neque vitae tempus quam pellentesque nec. Varius duis at consectetur lorem donec.", image: "You and Me Nails Salon"),
 ListBusiness(name: "i do nail shop", description: "Clases de uñas con método avanzado 100% GARANTIZADO y Distribuidores autorizados de Exotic Nails", image: "i do nails shop"),
 ]
+
+let backgroundGradient = LinearGradient(
+    colors: [Color.alizarin, Color.carrot],
+    startPoint: .top, endPoint: .bottom)

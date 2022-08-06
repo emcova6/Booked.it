@@ -11,33 +11,37 @@ struct SchedulingPage: View {
     @State var date = Date()
     @State var next: Bool = false
     var body: some View {
-        VStack{
-            Text("Select a date and time")
-                .font(.custom("Audrey-Bold", size: 32))
-            
-            DatePicker("Date", selection: $date, displayedComponents: [.date])
-                .datePickerStyle(.graphical)
-                        
-            DatePicker("", selection: $date, displayedComponents: [.hourAndMinute])
-                .labelsHidden()
-                .padding()
-            
-            Text("\(date.formatted(date: .complete, time: .shortened))")
-                .multilineTextAlignment(.center)
-                .font(.custom("Audrey-Bold", size: 18))
-                .frame(width: 350)
-                .padding()
-            
-            Button(action: {
-                next = true
-            }, label: {
-                Text("Next")
-                    .padding(20)
-                    .font(.custom("Audrey-Medium", size: 20))
-            })
-            NavigationLink(destination: SchedulingPage2(date: date).navigationBarBackButtonHidden(false), isActive: $next){}
+        ZStack {
+            Color.belizeHole //may change color
+                .edgesIgnoringSafeArea(.all)
+            VStack{
+                Text("Select a date and time")
+                    .font(.custom("Audrey-Bold", size: 30))
+                
+                DatePicker("Date", selection: $date, displayedComponents: [.date])
+                    .datePickerStyle(.graphical)
+                            
+                DatePicker("", selection: $date, displayedComponents: [.hourAndMinute])
+                    .labelsHidden()
+                    .padding()
+                
+                Text("\(date.formatted(date: .complete, time: .shortened))")
+                    .multilineTextAlignment(.center)
+                    .font(.custom("Audrey-Bold", size: 18))
+                    .frame(width: 350)
+                    .padding()
+                
+                Button(action: {
+                    next = true
+                }, label: {
+                    Text("Next")
+                        .padding(20)
+                        .font(.custom("Audrey-Medium", size: 20))
+                })
+                NavigationLink(destination: SchedulingPage2(date: date).navigationBarBackButtonHidden(false), isActive: $next){}
+            }
+            .edgesIgnoringSafeArea(.top)
         }
-        .edgesIgnoringSafeArea(.top)
     }
 }
 

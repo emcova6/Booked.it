@@ -35,6 +35,13 @@
 		106681AB288F4093007B51BE /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		108581BD28986F0700394C95 /* BusinessListingPage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BusinessListingPage.swift; sourceTree = "<group>"; };
 		108581BF28986FFF00394C95 /* BusinessInfoPage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BusinessInfoPage.swift; sourceTree = "<group>"; };
+		109478B1289DEBE7006ACD84 /* Audrey-Bold.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Audrey-Bold.otf"; sourceTree = "<group>"; };
+		109478B2289DEBEE006ACD84 /* Audrey-BoldOblique.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Audrey-BoldOblique.otf"; sourceTree = "<group>"; };
+		109478B3289DEBF3006ACD84 /* Audrey-Medium.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Audrey-Medium.otf"; sourceTree = "<group>"; };
+		109478B4289DEBF7006ACD84 /* Audrey-MediumOblique.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Audrey-MediumOblique.otf"; sourceTree = "<group>"; };
+		109478B5289DEBFF006ACD84 /* Audrey-Normal.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Audrey-Normal.otf"; sourceTree = "<group>"; };
+		109478B6289DEC04006ACD84 /* Audrey-NormalOblique.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Audrey-NormalOblique.otf"; sourceTree = "<group>"; };
+		109478B7289DF37D006ACD84 /* Booked-it-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = "Booked-it-Info.plist"; sourceTree = "<group>"; };
 		10B79B69289C5E2E005240B4 /* questionnaireButtons.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = questionnaireButtons.swift; sourceTree = "<group>"; };
 		10B79B6B289C7E48005240B4 /* ConfirmationPage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConfirmationPage.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -53,6 +60,7 @@
 		10668198288F4090007B51BE = {
 			isa = PBXGroup;
 			children = (
+				109478B7289DF37D006ACD84 /* Booked-it-Info.plist */,
 				105F054A2891D8FF00052B65 /* Extension.swift */,
 				106681A3288F4090007B51BE /* SignInPage */,
 				106681A2288F4090007B51BE /* Products */,
@@ -79,9 +87,10 @@
 				104364A72898A53F00D32BB9 /* SchedulingPage.swift */,
 				104364AD2899CD6300D32BB9 /* SchedulingPage2.swift */,
 				10B79B6B289C7E48005240B4 /* ConfirmationPage.swift */,
-				106681A8288F4093007B51BE /* Assets.xcassets */,
-				106681AA288F4093007B51BE /* Preview Content */,
 				10B79B69289C5E2E005240B4 /* questionnaireButtons.swift */,
+				106681A8288F4093007B51BE /* Assets.xcassets */,
+				109478A0289DEB83006ACD84 /* Fonts */,
+				106681AA288F4093007B51BE /* Preview Content */,
 			);
 			path = SignInPage;
 			sourceTree = "<group>";
@@ -92,6 +101,19 @@
 				106681AB288F4093007B51BE /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		109478A0289DEB83006ACD84 /* Fonts */ = {
+			isa = PBXGroup;
+			children = (
+				109478B6289DEC04006ACD84 /* Audrey-NormalOblique.otf */,
+				109478B5289DEBFF006ACD84 /* Audrey-Normal.otf */,
+				109478B4289DEBF7006ACD84 /* Audrey-MediumOblique.otf */,
+				109478B3289DEBF3006ACD84 /* Audrey-Medium.otf */,
+				109478B2289DEBEE006ACD84 /* Audrey-BoldOblique.otf */,
+				109478B1289DEBE7006ACD84 /* Audrey-Bold.otf */,
+			);
+			path = Fonts;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -305,6 +327,7 @@
 				DEVELOPMENT_ASSET_PATHS = "\"SignInPage/Preview Content\"";
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "Booked-it-Info.plist";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
@@ -333,6 +356,7 @@
 				DEVELOPMENT_ASSET_PATHS = "\"SignInPage/Preview Content\"";
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "Booked-it-Info.plist";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;

@@ -14,25 +14,25 @@ struct RegistrationPage: View {
     @State var email: String = ""
     @State var makeAccount: Bool = false
     var body: some View {
-        //NavigationView {
             VStack{
                 Text("Create an account")
-                    .font(.title)
+                    .font(.custom("Audrey-Normal", size: 32))
                 
-                Text("It'll only take a minute!")
+                Text("It only takes a minute!")
+                    .font(.custom("Audrey-Normal", size: 22))
                     .padding()
                 
-                SecureField ("First name", text: $firstName)
+                TextField ("First name", text: $firstName)
                     .textFieldStyle(.roundedBorder)
                     .frame(width: 150)
                     .padding()
                 
-                SecureField ("Last name", text: $lastName)
+                TextField ("Last name", text: $lastName)
                     .textFieldStyle(.roundedBorder)
                     .frame(width: 150)
                     .padding()
                 
-                SecureField ("Email", text: $email)
+                TextField ("Email", text: $email)
                     .textFieldStyle(.roundedBorder)
                     .frame(width: 150)
                     .padding()
@@ -46,15 +46,14 @@ struct RegistrationPage: View {
                 
                 Button(action: {
                     makeAccount = true
-                    //this button takes user to main page
                 }, label: {
                     Text("Register account")
+                        .font(.custom("Audrey-Normal", size: 22))
                         .padding(30)
                 })
             }
             .navigationTitle("")
             .navigationBarHidden(true)
-       // }
     }
 }
 

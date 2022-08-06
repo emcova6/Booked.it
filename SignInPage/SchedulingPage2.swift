@@ -20,52 +20,54 @@ struct SchedulingPage2: View {
     var body: some View {
         VStack {
             Text("You booked your appointment for the following date & time: \(date.formatted(date: .complete, time: .shortened))")
+                .font(.custom("Audrey-Normal", size: 22))
                 .padding()
                 .frame(width: 340)
             
             Text("Contact Information")
-                .font(.title)
-                .multilineTextAlignment(.center)
+                .font(.custom("Audrey-Normal", size: 32))                .multilineTextAlignment(.center)
                 .padding()
             
-            SecureField("Name", text: $name)
+            TextField("Name", text: $name)
                 .textFieldStyle(.roundedBorder)
                 .frame(width: 150)
                 .padding()
             
-            SecureField("Email", text: $email)
+            TextField("Email", text: $email)
                 .textFieldStyle(.roundedBorder)
                 .frame(width: 150)
                 .padding()
             
-            SecureField("Phone", text: $phone)
+            TextField("Phone", text: $phone)
                 .textFieldStyle(.roundedBorder)
                 .frame(width: 150)
                 .padding()
             
-           // VStack {
                 Text("Have you had any contact with someone with Covid-19 within the past 14 days?")
+                .font(.custom("Audrey-Normal", size: 22))
                     .padding()
                 HStack {
                     questionnaireButtons(
-                    isSelected: $isSelected,
-                    color: .blue,
-                    text: "Yes")
-                        .onTapGesture {
-                            isSelected.toggle()
-                            if isSelected {
-                                isSelected2 = false
+                        isSelected: $isSelected,
+                        color: .blue, //change yes button color
+                        text: "Yes")
+                            .onTapGesture {
+                                isSelected.toggle()
+                                    
+                                if isSelected {
+                                    isSelected2 = false
+                                }
                             }
-                        }
                     questionnaireButtons(
-                    isSelected: $isSelected,
-                    color: .red,
-                    text: "No")
-                        .onTapGesture {
-                            isSelected2.toggle()
-                            if isSelected2 {
-                                isSelected = false
-                            }
+                        isSelected: $isSelected2,
+                        color: .red,
+                        text: "No")
+                            .onTapGesture {
+                                isSelected2.toggle()
+                                    
+                                if isSelected2 {
+                                    isSelected = false
+                                }
                         }
                 }
                 .frame(width: 350)
@@ -74,7 +76,9 @@ struct SchedulingPage2: View {
                     alertText = isSelected ? "Okay! Make sure to wear a mask!" : "Clear to go!"
                     showAlert.toggle()
                 }
+                .font(.custom("Audrey-Normal", size: 20))
                 .padding()
+            
                 .alert(alertText, isPresented: $showAlert) {
                     Button("Continue") {
                         submit = true
@@ -84,7 +88,6 @@ struct SchedulingPage2: View {
                     }
                 }
                 NavigationLink(destination: ConfirmationPage(date: date).navigationBarBackButtonHidden(true), isActive: $submit){}
-            //}
     }
 }
 

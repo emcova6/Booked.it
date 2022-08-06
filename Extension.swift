@@ -8,7 +8,7 @@
 import Foundation
 import SwiftUI
 
-extension Color{
+extension Color {
     static let alizarin = Color("alizarin")
     static let amethyst = Color("amethyst")
     static let asbestos = Color("asbestos")

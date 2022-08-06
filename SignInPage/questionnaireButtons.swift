@@ -15,8 +15,9 @@ struct questionnaireButtons: View {
         ZStack {
             Capsule()
                 .frame(height: 50)
-                .foregroundColor(isSelected ? color : .gray)
+                .foregroundColor(isSelected ? color: .gray)
             Text(text)
+                //.font(.custom("Audrey-Bold", size: 20))
                 .foregroundColor(.white)
         }
     }
@@ -24,6 +25,7 @@ struct questionnaireButtons: View {
 
 struct questionnaireButtons_Previews: PreviewProvider {
     static var previews: some View {
-        questionnaireButtons(isSelected: .constant(false), color: .blue, text: "Option")
+        questionnaireButtons(isSelected: .constant(false), color: .gray, text: "Option")
     }
 }
+

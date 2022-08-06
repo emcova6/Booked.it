@@ -16,13 +16,13 @@ struct ContentView: View {
         NavigationView {
             VStack {
                 Text("Welcome to Booked.it")
-                    .font(.title)
+                    .font(.custom("Audrey-Normal", size: 32))
                 
                 Image(systemName: "calendar.circle.fill")
                     .font(.title)
                     .padding()
                 
-                SecureField ("Email", text: $email)
+                TextField ("Email", text: $email)
                     .textFieldStyle(.roundedBorder)
                     .frame(width: 150)
                     .padding()
@@ -38,19 +38,22 @@ struct ContentView: View {
                     signIn = true
                 }, label: {
                     Text("Sign In")
-                        .padding(30)
+                        .font(.custom("Audrey-Normal", size: 22))
+                        .padding(25)
                 })
                 
-                NavigationLink(destination: RegistrationPage().navigationBarBackButtonHidden(true), isActive: $createAccount){}
+                NavigationLink(destination: RegistrationPage().navigationBarBackButtonHidden(false), isActive: $createAccount){}
                 
                 Text("Don't have an account?")
+                    .font(.custom("Audrey-Normal", size: 22))
                     .padding()
                 
                 Button(action: {
                     createAccount = true
-                    //this button takes user to registration page
                 }, label: {
                     Text("Create Account")
+                        .font(.custom("Audrey-Normal", size: 22)) 
+
                 })
             }
             .navigationTitle("")

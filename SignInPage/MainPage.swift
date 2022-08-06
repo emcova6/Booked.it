@@ -10,27 +10,26 @@ import SwiftUI
 struct MainPage: View {
     @State var makeAppoint: Bool = false
     var body: some View {
-        //NavigationView {
             VStack{
                 Text("Book an Appointment Now!")
-                    .font(.title)
+                    .font(.custom("Audrey-Normal", size: 32))
                 
                 Text("It only takes a few minutes.")
+                    .font(.custom("Audrey-Normal", size: 22))
                     .padding()
                 
                 NavigationLink(destination: BusinessListingPage().navigationBarBackButtonHidden(true), isActive: $makeAppoint){}
                 
                 Button(action: {
                     makeAppoint = true
-                    //this button takes user to main page
                 }, label: {
                     Text("Book Appointment")
+                        .font(.custom("Audrey-Normal", size: 20))
                         .padding(30)
                 })
             }
             .navigationTitle("")
             .navigationBarHidden(true)
-       // }
     }
 }
 

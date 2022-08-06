@@ -23,8 +23,7 @@ struct BusinessInfoPage: View {
                 .padding()
             
             Text(businessListing.description)
-            Spacer()
-                .frame(height: 10)
+                .frame(width: 350)
             
             NavigationLink(destination: SchedulingPage().navigationBarBackButtonHidden(false), isActive: $bookAppoint){}
             
@@ -32,6 +31,7 @@ struct BusinessInfoPage: View {
                 bookAppoint = true
             }, label: {
                 Text("Book Appointment")
+                    .font(.custom("Audrey-Normal", size: 20))
                     .padding(30)
             })
         }

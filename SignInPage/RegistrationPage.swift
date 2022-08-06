@@ -24,21 +24,25 @@ struct RegistrationPage: View {
                 
                 TextField ("First name", text: $firstName)
                     .textFieldStyle(.roundedBorder)
+                    .font(.custom("Audrey-Normal", size: 18))
                     .frame(width: 150)
                     .padding()
                 
                 TextField ("Last name", text: $lastName)
                     .textFieldStyle(.roundedBorder)
+                    .font(.custom("Audrey-Normal", size: 18))
                     .frame(width: 150)
                     .padding()
                 
                 TextField ("Email", text: $email)
                     .textFieldStyle(.roundedBorder)
+                    .font(.custom("Audrey-Normal", size: 18))
                     .frame(width: 150)
                     .padding()
                 
                 SecureField("Password", text: $password)
                     .textFieldStyle(.roundedBorder)
+                    .font(.custom("Audrey-Normal", size: 18))
                     .frame(width: 150)
                     .padding()
                 
@@ -48,7 +52,7 @@ struct RegistrationPage: View {
                     makeAccount = true
                 }, label: {
                     Text("Register account")
-                        .font(.custom("Audrey-Normal", size: 22))
+                        .font(.custom("Audrey-Bold", size: 22))
                         .padding(30)
                 })
             }

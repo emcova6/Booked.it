@@ -19,37 +19,40 @@ struct SchedulingPage2: View {
     var date: Date
     var body: some View {
         VStack {
-            Text("You booked your appointment for the following date & time: \(date.formatted(date: .complete, time: .shortened))")
-                .font(.custom("Audrey-Normal", size: 22))
+            Text("You booked your appointment for \(date.formatted(date: .complete, time: .shortened))")
+                .font(.custom("Audrey-Medium", size: 22))
                 .padding()
                 .frame(width: 340)
             
             Text("Contact Information")
-                .font(.custom("Audrey-Normal", size: 32))                .multilineTextAlignment(.center)
+                .font(.custom("Audrey-Bold", size: 32))                .multilineTextAlignment(.center)
                 .padding()
             
             TextField("Name", text: $name)
                 .textFieldStyle(.roundedBorder)
+                .font(.custom("Audrey-Normal", size: 18))
                 .frame(width: 150)
                 .padding()
             
             TextField("Email", text: $email)
                 .textFieldStyle(.roundedBorder)
+                .font(.custom("Audrey-Normal", size: 18))
                 .frame(width: 150)
                 .padding()
             
             TextField("Phone", text: $phone)
                 .textFieldStyle(.roundedBorder)
+                .font(.custom("Audrey-Normal", size: 18))
                 .frame(width: 150)
                 .padding()
             
                 Text("Have you had any contact with someone with Covid-19 within the past 14 days?")
-                .font(.custom("Audrey-Normal", size: 22))
+                .font(.custom("Audrey-MediumOblique", size: 22))
                     .padding()
                 HStack {
                     questionnaireButtons(
                         isSelected: $isSelected,
-                        color: .blue, //change yes button color
+                        color: .blue,
                         text: "Yes")
                             .onTapGesture {
                                 isSelected.toggle()
@@ -73,10 +76,10 @@ struct SchedulingPage2: View {
                 .frame(width: 350)
                 
                 Button("Submit") {
-                    alertText = isSelected ? "Okay! Make sure to wear a mask!" : "Clear to go!"
+                    alertText = isSelected ? "Make sure to sanitize your hands and wear a mask!" : "Clear to go!"
                     showAlert.toggle()
                 }
-                .font(.custom("Audrey-Normal", size: 20))
+                .font(.custom("Audrey-Medium", size: 20))
                 .padding()
             
                 .alert(alertText, isPresented: $showAlert) {

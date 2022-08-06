@@ -12,20 +12,19 @@ struct SchedulingPage: View {
     @State var next: Bool = false
     var body: some View {
         VStack{
-            Text("Select a date & time")
-                .font(.title)
-                .bold()
+            Text("Select a date and time")
+                .font(.custom("Audrey-Bold", size: 32))
             
             DatePicker("Date", selection: $date, displayedComponents: [.date])
                 .datePickerStyle(.graphical)
-            
-            //want to only show date, not time
-            
+                        
             DatePicker("", selection: $date, displayedComponents: [.hourAndMinute])
                 .labelsHidden()
+                .padding()
             
             Text("\(date.formatted(date: .complete, time: .shortened))")
                 .multilineTextAlignment(.center)
+                .font(.custom("Audrey-Bold", size: 18))
                 .frame(width: 350)
                 .padding()
             
@@ -33,7 +32,8 @@ struct SchedulingPage: View {
                 next = true
             }, label: {
                 Text("Next")
-                    .padding(40)
+                    .padding(20)
+                    .font(.custom("Audrey-Medium", size: 20))
             })
             NavigationLink(destination: SchedulingPage2(date: date).navigationBarBackButtonHidden(false), isActive: $next){}
         }

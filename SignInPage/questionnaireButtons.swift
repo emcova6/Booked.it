@@ -17,7 +17,7 @@ struct questionnaireButtons: View {
                 .frame(height: 50)
                 .foregroundColor(isSelected ? color: .gray)
             Text(text)
-                //.font(.custom("Audrey-Bold", size: 20))
+                .font(.custom("Audrey-Bold", size: 18))
                 .foregroundColor(.white)
         }
     }

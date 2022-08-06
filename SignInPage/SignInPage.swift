@@ -14,21 +14,28 @@ struct ContentView: View {
     @State var createAccount: Bool = false
     var body: some View {
         NavigationView {
+            ZStack {
+                ZStack {}
+                    .frame( maxWidth: .infinity, maxHeight: .infinity)
+                    .background(Image("rainbow bg").resizable())
+                    .ignoresSafeArea()
             VStack {
                 Text("Welcome to Booked.it")
-                    .font(.custom("Audrey-Normal", size: 32))
+                    .font(.custom("Audrey-Medium", size: 32))
                 
-                Image(systemName: "calendar.circle.fill")
-                    .font(.title)
-                    .padding()
+                //Image(systemName: "calendar.circle.fill")
+                //    .font(.title)
+                //    .padding()
                 
                 TextField ("Email", text: $email)
                     .textFieldStyle(.roundedBorder)
+                    .font(.custom("Audrey-Normal", size: 18))
                     .frame(width: 150)
                     .padding()
                 
                 SecureField("Password", text: $password)
                     .textFieldStyle(.roundedBorder)
+                    .font(.custom("Audrey-Normal", size: 18))
                     .frame(width: 150)
                     .padding()
                 
@@ -38,7 +45,7 @@ struct ContentView: View {
                     signIn = true
                 }, label: {
                     Text("Sign In")
-                        .font(.custom("Audrey-Normal", size: 22))
+                        .font(.custom("Audrey-Medium", size: 22))
                         .padding(25)
                 })
                 
@@ -52,13 +59,14 @@ struct ContentView: View {
                     createAccount = true
                 }, label: {
                     Text("Create Account")
-                        .font(.custom("Audrey-Normal", size: 22)) 
+                        .font(.custom("Audrey-Bold", size: 22))
 
                 })
             }
             .navigationTitle("")
             .navigationBarHidden(true)
         }
+    }
     }
 }
 
@@ -68,3 +76,4 @@ struct ContentView_Previews: PreviewProvider {
             //.preferredColorScheme(.dark) //changes app to dark mode
     }
 }
+

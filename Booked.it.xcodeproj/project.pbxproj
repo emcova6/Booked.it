@@ -18,6 +18,12 @@
 		106681AC288F4093007B51BE /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 106681AB288F4093007B51BE /* Preview Assets.xcassets */; };
 		108581BE28986F0700394C95 /* BusinessListingPage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 108581BD28986F0700394C95 /* BusinessListingPage.swift */; };
 		108581C028986FFF00394C95 /* BusinessInfoPage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 108581BF28986FFF00394C95 /* BusinessInfoPage.swift */; };
+		109478B9289EAC0D006ACD84 /* Audrey-Normal.otf in Resources */ = {isa = PBXBuildFile; fileRef = 109478B5289DEBFF006ACD84 /* Audrey-Normal.otf */; };
+		109478BA289EAC26006ACD84 /* Audrey-NormalOblique.otf in Resources */ = {isa = PBXBuildFile; fileRef = 109478B6289DEC04006ACD84 /* Audrey-NormalOblique.otf */; };
+		109478BB289EAC43006ACD84 /* Audrey-MediumOblique.otf in Resources */ = {isa = PBXBuildFile; fileRef = 109478B4289DEBF7006ACD84 /* Audrey-MediumOblique.otf */; };
+		109478BC289EAC43006ACD84 /* Audrey-Medium.otf in Resources */ = {isa = PBXBuildFile; fileRef = 109478B3289DEBF3006ACD84 /* Audrey-Medium.otf */; };
+		109478BD289EAC43006ACD84 /* Audrey-BoldOblique.otf in Resources */ = {isa = PBXBuildFile; fileRef = 109478B2289DEBEE006ACD84 /* Audrey-BoldOblique.otf */; };
+		109478BE289EAC43006ACD84 /* Audrey-Bold.otf in Resources */ = {isa = PBXBuildFile; fileRef = 109478B1289DEBE7006ACD84 /* Audrey-Bold.otf */; };
 		10B79B6A289C5E2E005240B4 /* questionnaireButtons.swift in Sources */ = {isa = PBXBuildFile; fileRef = 10B79B69289C5E2E005240B4 /* questionnaireButtons.swift */; };
 		10B79B6C289C7E48005240B4 /* ConfirmationPage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 10B79B6B289C7E48005240B4 /* ConfirmationPage.swift */; };
 /* End PBXBuildFile section */
@@ -174,6 +180,12 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				109478BB289EAC43006ACD84 /* Audrey-MediumOblique.otf in Resources */,
+				109478BC289EAC43006ACD84 /* Audrey-Medium.otf in Resources */,
+				109478BD289EAC43006ACD84 /* Audrey-BoldOblique.otf in Resources */,
+				109478BE289EAC43006ACD84 /* Audrey-Bold.otf in Resources */,
+				109478BA289EAC26006ACD84 /* Audrey-NormalOblique.otf in Resources */,
+				109478B9289EAC0D006ACD84 /* Audrey-Normal.otf in Resources */,
 				106681AC288F4093007B51BE /* Preview Assets.xcassets in Resources */,
 				106681A9288F4093007B51BE /* Assets.xcassets in Resources */,
 			);

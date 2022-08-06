@@ -31,7 +31,7 @@ struct BusinessInfoPage: View {
                 bookAppoint = true
             }, label: {
                 Text("Book Appointment")
-                    .font(.custom("Audrey-Normal", size: 20))
+                    .font(.custom("Audrey-MediumOblique", size: 20))
                     .padding(30)
             })
         }

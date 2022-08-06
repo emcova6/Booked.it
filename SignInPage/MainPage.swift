@@ -12,6 +12,7 @@ struct MainPage: View {
     var body: some View {
             VStack{
                 Text("Book an Appointment Now!")
+                    .multilineTextAlignment(.center)
                     .font(.custom("Audrey-Normal", size: 32))
                 
                 Text("It only takes a few minutes.")
@@ -24,7 +25,7 @@ struct MainPage: View {
                     makeAppoint = true
                 }, label: {
                     Text("Book Appointment")
-                        .font(.custom("Audrey-Normal", size: 20))
+                        .font(.custom("Audrey-MediumOblique", size: 20))
                         .padding(30)
                 })
             }

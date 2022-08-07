@@ -18,10 +18,12 @@ struct SchedulingPage2: View {
     @State var phone: String = ""
     var date: Date
     var body: some View {
+        //sets background to gradient
         LinearGradient(gradient: Gradient(colors: [Color.amethyst, Color.belizeHole]), startPoint: .top, endPoint: .bottom)
                    .edgesIgnoringSafeArea(.all)
                    .overlay(
             VStack {
+                //shows date + time you booked appointment
                 Text("You booked your appointment for \(date.formatted(date: .complete, time: .shortened))")
                     .font(.custom("Audrey-Medium", size: 22))
                     .padding()
@@ -32,6 +34,7 @@ struct SchedulingPage2: View {
                     .multilineTextAlignment(.center)
                     .padding()
                 
+                //imput fields
                 TextField("Name", text: $name)
                     .textFieldStyle(.roundedBorder)
                     .font(.custom("Audrey-Normal", size: 18))
@@ -50,10 +53,12 @@ struct SchedulingPage2: View {
                     .frame(width: 150)
                     .padding()
                 
+                    //screening question
                     Text("Have you had any contact with someone with Covid-19 within the past 14 days?")
                     .font(.custom("Audrey-MediumOblique", size: 22))
                         .padding()
                     HStack {
+                        //"yes" and "no" buttons
                         questionnaireButtons(
                             isSelected: $isSelected,
                             color: .blue,
@@ -79,6 +84,8 @@ struct SchedulingPage2: View {
                     }
                     .frame(width: 350)
                     
+                //pressing this button will give you a response based on whether you press the "yes" or "no" option
+                //you will also be able to move to the next page
                     Button("Submit") {
                         alertText = isSelected ? "Make sure to sanitize your hands and wear a mask!" : "Clear to go!"
                         showAlert.toggle()
@@ -107,7 +114,3 @@ struct SchedulingPage2_Previews: PreviewProvider {
 
 
 var previewDate = Date()
-
-
-
-

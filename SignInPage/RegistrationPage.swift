@@ -16,11 +16,12 @@ struct RegistrationPage: View {
 
     var body: some View {
         ZStack {
+            //sets background to rainbow image
             ZStack {}
                 .frame( maxWidth: .infinity, maxHeight: .infinity)
                 .background(Image("rainbow bg").resizable())
                 .ignoresSafeArea()
-            VStack{
+            VStack {
                     Text("Create an account")
                         .font(.custom("Audrey-Bold", size: 30))
                     
@@ -28,6 +29,7 @@ struct RegistrationPage: View {
                         .font(.custom("Audrey-Normal", size: 22))
                         .padding()
                     
+                    //input fields
                     TextField ("First name", text: $firstName)
                         .textFieldStyle(.roundedBorder)
                         .font(.custom("Audrey-Normal", size: 18))
@@ -52,6 +54,7 @@ struct RegistrationPage: View {
                         .frame(width: 150)
                         .padding()
                     
+                //button navigates to next page
                 NavigationLink(destination: MainPage().navigationBarBackButtonHidden(true), isActive: $makeAccount){}
                     
                     Button(action: {

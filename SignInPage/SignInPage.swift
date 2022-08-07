@@ -15,14 +15,17 @@ struct ContentView: View {
     var body: some View {
         NavigationView {
             ZStack {
+                //sets background to rainbow image
                 ZStack {}
                     .frame( maxWidth: .infinity, maxHeight: .infinity)
                     .background(Image("rainbow bg").resizable())
                     .ignoresSafeArea()
             VStack {
+                //title
                 Text("Welcome to Booked.it")
                     .font(.custom("Audrey-Medium", size: 32))
                 
+                //imput fields to sign in (takes you to next page)
                 TextField ("Email", text: $email)
                     .textFieldStyle(.roundedBorder)
                     .font(.custom("Audrey-Normal", size: 18))
@@ -35,6 +38,7 @@ struct ContentView: View {
                     .frame(width: 150)
                     .padding()
                 
+                //button navigates to booking page
                 NavigationLink(destination: MainPage().navigationBarBackButtonHidden(true), isActive: $signIn){}
                 
                 Button(action: {
@@ -45,6 +49,7 @@ struct ContentView: View {
                         .padding(25)
                 })
                 
+                //button navigates to registration page
                 NavigationLink(destination: RegistrationPage().navigationBarBackButtonHidden(false), isActive: $createAccount){}
                 
                 Text("Don't have an account?")

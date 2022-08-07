@@ -11,10 +11,12 @@ struct ConfirmationPage: View {
     @State var mainPage: Bool = false
     var date: Date
     var body: some View {
+        //sets background to gradient
         LinearGradient(gradient: Gradient(colors: [Color.turquoise, Color.belizeHole]), startPoint: .top, endPoint: .bottom)
                     .edgesIgnoringSafeArea(.vertical)
                     .overlay(
             VStack {
+                //page that tells you date + time you booked your appointment for
                     Text("Confirmation")
                         .font(.custom("Audrey-Medium", size: 32))
                         .padding(20)
@@ -29,6 +31,7 @@ struct ConfirmationPage: View {
                         .font(.custom("Audrey-Normal", size: 22))
                         .padding(20)
                     
+                //button that takes you back to appoinment booking page
                     NavigationLink(destination: MainPage().navigationBarBackButtonHidden(true), isActive: $mainPage){}
                     
                     Button(action: {

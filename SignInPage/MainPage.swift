@@ -11,6 +11,7 @@ struct MainPage: View {
     @State var makeAppoint: Bool = false
     var body: some View {
         ZStack {
+            //sets background to multicolor
             ZStack {}
                 .frame( maxWidth: .infinity, maxHeight: .infinity)
                 .background(Image("rainbow").resizable())
@@ -24,7 +25,8 @@ struct MainPage: View {
                     Text("It only takes a few minutes")
                         .font(.custom("Audrey-Normal", size: 23))
                         .padding()
-                    
+                   
+                    //button navigates to listed businesses
                     NavigationLink(destination: BusinessListingPage().navigationBarBackButtonHidden(true), isActive: $makeAppoint){}
                     
                     Button(action: {

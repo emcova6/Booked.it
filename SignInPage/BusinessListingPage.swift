@@ -12,10 +12,12 @@ struct BusinessListingPage: View {
         UITableView.appearance().backgroundColor = .clear
     }
     var body: some View {
+        //sets background to gradient
         LinearGradient(gradient: Gradient(colors: [Color.wisteria, Color.alizarin]), startPoint: .top, endPoint: .bottom)
                 .edgesIgnoringSafeArea(.all)
                 .overlay(
                     VStack {
+                        //setup of page
                         List(businessListings) { businessListing in
                             HStack {
                                 Image(businessListing.image)
@@ -56,7 +58,7 @@ struct ListBusiness: Identifiable {
     var description: String
     var image: String
 }
-
+//description for each business
 var businessListings = [
 ListBusiness(name: "Gente Bella Beauty Salon Inc.", description: "Welcome to Gente Bella Beauty Salon Inc., your premier beauty and hair salon where we genuinely care about our clients. We use great products and have good prices for our services. Our customers deserve nothing but the best to always look glamorous. We provide a very welcoming environment for both new and returning customers.", image: "GBBS"),
 ListBusiness(name: "Betty's Beauty Salon & Hair Design", description: "Bettys Beauty salón Creemos que el servicio al cliente es lo más importante para realizar nuestra pasión por le trasformación de un cambio para felicidad.", image: "Betty's Beauty Salon"),

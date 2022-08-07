@@ -18,9 +18,9 @@ struct SchedulingPage2: View {
     @State var phone: String = ""
     var date: Date
     var body: some View {
-        ZStack {
-            Color.belizeHole //may change color
-                .edgesIgnoringSafeArea(.all)
+        LinearGradient(gradient: Gradient(colors: [Color.amethyst, Color.belizeHole]), startPoint: .top, endPoint: .bottom)
+                   .edgesIgnoringSafeArea(.all)
+                   .overlay(
             VStack {
                 Text("You booked your appointment for \(date.formatted(date: .complete, time: .shortened))")
                     .font(.custom("Audrey-Medium", size: 22))
@@ -95,8 +95,8 @@ struct SchedulingPage2: View {
                         }
                     }
                     NavigationLink(destination: ConfirmationPage(date: date).navigationBarBackButtonHidden(true), isActive: $submit){}
-            }
-        }
+            })
+    }
 }
 
 struct SchedulingPage2_Previews: PreviewProvider {
@@ -104,7 +104,7 @@ struct SchedulingPage2_Previews: PreviewProvider {
         SchedulingPage2(date: previewDate)
     }
 }
-}
+
 
 var previewDate = Date()
 

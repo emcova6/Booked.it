@@ -11,9 +11,9 @@ struct SchedulingPage: View {
     @State var date = Date()
     @State var next: Bool = false
     var body: some View {
-        ZStack {
-            Color.belizeHole //may change color
-                .edgesIgnoringSafeArea(.all)
+        LinearGradient(gradient: Gradient(colors: [Color.sunflower, Color.carrot]), startPoint: .top, endPoint: .bottom)
+                   .edgesIgnoringSafeArea(.all)
+                   .overlay(
             VStack{
                 Text("Select a date and time")
                     .font(.custom("Audrey-Bold", size: 30))
@@ -39,9 +39,7 @@ struct SchedulingPage: View {
                         .font(.custom("Audrey-Medium", size: 20))
                 })
                 NavigationLink(destination: SchedulingPage2(date: date).navigationBarBackButtonHidden(false), isActive: $next){}
-            }
-            .edgesIgnoringSafeArea(.top)
-        }
+            })
     }
 }
 

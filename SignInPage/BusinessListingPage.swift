@@ -9,8 +9,6 @@ import SwiftUI
 
 struct BusinessListingPage: View {
     var body: some View {
-        ZStack {
-            backgroundGradient
             VStack {
                         List(businessListings) { businessListing in
                             HStack {
@@ -37,7 +35,7 @@ struct BusinessListingPage: View {
             }
         }
     }
-}
+
         
 
 struct BusinessListingPage_Previews: PreviewProvider {
@@ -60,7 +58,3 @@ ListBusiness(name: "Lady’s Nail Bar", description: "Lorem ipsum dolor sit amet
 ListBusiness(name: "You & Me Nails Salon", description: "Consectetur adipiscing elit ut aliquam. Imperdiet massa tincidunt nunc pulvinar sapien et ligula. Neque vitae tempus quam pellentesque nec. Varius duis at consectetur lorem donec.", image: "You and Me Nails Salon"),
 ListBusiness(name: "i do nail shop", description: "Clases de uñas con método avanzado 100% GARANTIZADO y Distribuidores autorizados de Exotic Nails", image: "i do nails shop"),
 ]
-
-let backgroundGradient = LinearGradient(
-    colors: [Color.alizarin, Color.carrot],
-    startPoint: .top, endPoint: .bottom)

@@ -11,9 +11,9 @@ struct BusinessInfoPage: View {
     var businessListing: ListBusiness = businessListings[0]
     @State var bookAppoint: Bool = false
     var body: some View {
-        ZStack {
-            Color.alizarin //may change color
-                .edgesIgnoringSafeArea(.all)
+        LinearGradient(gradient: Gradient(colors: [Color.alizarin, Color.carrot]), startPoint: .top, endPoint: .bottom)
+                    .edgesIgnoringSafeArea(.vertical)
+                    .overlay(
             VStack {
                 Image(businessListing.image)
                     .resizable()
@@ -37,8 +37,7 @@ struct BusinessInfoPage: View {
                         .font(.custom("Audrey-MediumOblique", size: 20))
                         .padding(30)
                 })
-            }
-        }
+        })
     }
 }
 
@@ -47,4 +46,3 @@ struct BusinessInfoPage_Previews: PreviewProvider {
         BusinessInfoPage()
     }
 }
-

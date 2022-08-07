@@ -8,10 +8,10 @@
 import SwiftUI
 
 struct BusinessInfoPage: View {
-    var businessListing: ListBusiness = businessListings[0]
     @State var bookAppoint: Bool = false
+    var businessListing: ListBusiness = businessListings[0]
     var body: some View {
-        LinearGradient(gradient: Gradient(colors: [Color.alizarin, Color.carrot]), startPoint: .top, endPoint: .bottom)
+        LinearGradient(gradient: Gradient(colors: [Color.wisteria, Color.alizarin]), startPoint: .top, endPoint: .bottom)
                     .edgesIgnoringSafeArea(.vertical)
                     .overlay(
             VStack {

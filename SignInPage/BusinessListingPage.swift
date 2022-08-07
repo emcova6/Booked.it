@@ -8,8 +8,14 @@
 import SwiftUI
 
 struct BusinessListingPage: View {
+    init() {
+        UITableView.appearance().backgroundColor = .clear
+    }
     var body: some View {
-            VStack {
+        LinearGradient(gradient: Gradient(colors: [Color.wisteria, Color.alizarin]), startPoint: .top, endPoint: .bottom)
+                .edgesIgnoringSafeArea(.all)
+                .overlay(
+                    VStack {
                         List(businessListings) { businessListing in
                             HStack {
                                 Image(businessListing.image)
@@ -31,11 +37,11 @@ struct BusinessListingPage: View {
                             .navigationBarTitle("Listings")
                             .overlay(NavigationLink("", destination: BusinessInfoPage(businessListing: businessListing))
                                 .font(.system(size: 26, weight: .bold)).opacity(0))
+                            
                             }
-            }
+            })
         }
     }
-
         
 
 struct BusinessListingPage_Previews: PreviewProvider {

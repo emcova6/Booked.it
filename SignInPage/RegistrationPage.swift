@@ -29,7 +29,7 @@ struct RegistrationPage: View {
                         .font(.custom("Audrey-Normal", size: 22))
                         .padding()
                     
-                    //input fields
+                    //input fields to register for an account
                     TextField ("First name", text: $firstName)
                         .textFieldStyle(.roundedBorder)
                         .font(.custom("Audrey-Normal", size: 18))
